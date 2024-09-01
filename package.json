@@ -1,9 +1,9 @@
 {
   "name": "small-timeline",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "homepage":"https://franlopezs.github.io/small-timeline/",
+  "homepage":".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
