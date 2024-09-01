@@ -40,7 +40,7 @@ const posts = [
     favouriteCounter: 19
   }
 ]
-
+//
 function App() {
   return (
     <section>
