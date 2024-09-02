@@ -10,11 +10,11 @@ export function PostCard({ children, userName, name, initialRepostCounter, initi
                 <img src={`https://unavatar.io/${userName}`} alt={`Avatar de ${name}`} className='rounded-full' />
             </div>
             <div className='flex-auto'>
-                <div className='flex gap-2 text-start ml-4 text-base md:text-lg'>
-                    <span className='text-slate-50 font-bold'>
+                <div className='flex flex-col sm:flex-row gap-0 sm:gap-2 mb-2 sm:mb-0 text-start ml-4 text-base md:text-lg'>
+                    <span className='text-slate-50 font-bold text-nowrap'>
                         {name}
                     </span>
-                    <span className='text-slate-200'>
+                    <span className='text-slate-200 hidden sm:block'>
                         ·
                     </span>
                     <span className='text-slate-400'>
