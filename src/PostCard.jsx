@@ -3,13 +3,14 @@ import { ButtonWithoutCounter } from './ButtonWithoutCounter'
 import 'boxicons'
 
 export function PostCard({ children, userName, name, initialRepostCounter, initialFavouriteCounter }) {
+    // md:min-w-[400px] lg:min-w-[600px] xl:min-w-[900px] 
     return (
-        <div className='min-h-16 min-w-[900px] flex border-l border-r border-white p-4'>
-            <div className='flex-none w-20'>
+        <div className='min-h-16 min-w-[200px] flex border-l border-r border-white p-4'>
+            <div className='flex-none w-14 md:w-20'>
                 <img src={`https://unavatar.io/${userName}`} alt={`Avatar de ${name}`} className='rounded-full' />
             </div>
             <div className='flex-auto'>
-                <div className='flex gap-2 text-start ml-4 text-lg'>
+                <div className='flex gap-2 text-start ml-4 text-xs sm:text-base md:text-lg'>
                     <span className='text-slate-50'>
                         {name}
                     </span>
@@ -21,7 +22,7 @@ export function PostCard({ children, userName, name, initialRepostCounter, initi
                     </span>
                 </div>
                 <div className='text-start ml-4'>
-                    <span className='text-lg whitespace-pre-line'>
+                    <span className='text-base md:text-lg whitespace-pre-line'>
                         {children}
                     </span>
                 </div>

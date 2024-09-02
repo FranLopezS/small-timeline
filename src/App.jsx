@@ -43,7 +43,7 @@ const posts = [
 //
 function App() {
   return (
-    <section>
+    <section className='sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl'>
       {
         posts.map(post => {
           const { userName, name, bodyText, repostCounter, favouriteCounter } = post;
