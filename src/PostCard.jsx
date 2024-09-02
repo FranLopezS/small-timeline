@@ -6,12 +6,12 @@ export function PostCard({ children, userName, name, initialRepostCounter, initi
     // md:min-w-[400px] lg:min-w-[600px] xl:min-w-[900px] 
     return (
         <div className='min-h-16 min-w-[200px] flex border-l border-r border-white p-4'>
-            <div className='flex-none w-14 md:w-20'>
+            <div className='flex-none w-10 md:w-20'>
                 <img src={`https://unavatar.io/${userName}`} alt={`Avatar de ${name}`} className='rounded-full' />
             </div>
             <div className='flex-auto'>
-                <div className='flex gap-2 text-start ml-4 text-xs sm:text-base md:text-lg'>
-                    <span className='text-slate-50'>
+                <div className='flex gap-2 text-start ml-4 text-base md:text-lg'>
+                    <span className='text-slate-50 font-bold'>
                         {name}
                     </span>
                     <span className='text-slate-200'>
